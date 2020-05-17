@@ -13,7 +13,7 @@ const weather = (latitude,longitude, callback) => {
                  realTemp: response.body.current.temperature,
                  realFeal: response.body.current.feelslike,
                  location: response.body.location.name,
-                 forecast: 'The weather in ' + response.body.location.name + ' is '+ response.body.current.weather_descriptions[0]
+                 forecast: 'The weather in ' + response.body.location.name + ' is '+ response.body.current.weather_descriptions[0] + ' with temperature of ' + response.body.current.temperature + 'ºC'
             })
         }
     })
